@@ -24,7 +24,7 @@ describe('fizzbuzz spell checking', () => {
         {number:  91, expectedWord: '91'},   {number:  92, expectedWord: '92'},   {number:  93, expectedWord: 'Fizz'}, {number:  94, expectedWord: '94'},   {number:  95, expectedWord: 'Buzz'},
         {number:  96, expectedWord: 'Fizz'}, {number:  97, expectedWord: '97'},   {number:  98, expectedWord: '98'},   {number:  99, expectedWord: 'Fizz'}, {number:  100, expectedWord: 'Buzz'}
         ])('$number should be spelled as $expectedWord', ({number, expectedWord}) => {
-            let word = fizzbuzz(number);
+            const word = fizzbuzz(number);
 
             expect(word).toBe(expectedWord)
     });

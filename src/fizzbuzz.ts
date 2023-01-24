@@ -1,4 +1,4 @@
-export function fizzbuzz(number) {
+export function fizzbuzz(number: number) {
     if (number % 15 === 0) {
         return "Fizz Buzz";
     }

@@ -23,9 +23,9 @@ describe('fizzbuzz spell checking', () => {
         {number:  86, expectedWord: '86'},   {number:  87, expectedWord: 'Fizz'}, {number:  88, expectedWord: '88'},   {number:  89, expectedWord: '89'},   {number:  90, expectedWord: 'Fizz Buzz'},
         {number:  91, expectedWord: '91'},   {number:  92, expectedWord: '92'},   {number:  93, expectedWord: 'Fizz'}, {number:  94, expectedWord: '94'},   {number:  95, expectedWord: 'Buzz'},
         {number:  96, expectedWord: 'Fizz'}, {number:  97, expectedWord: '97'},   {number:  98, expectedWord: '98'},   {number:  99, expectedWord: 'Fizz'}, {number:  100, expectedWord: 'Buzz'}
-        ])('$number should be spelled as $expectedWord', ({number, expectedWord}) => {
-            const word = fizzbuzz(number);
+        ])('$number should be spelled as $expectedWord', ({number, expectedWord: spelledAsExpected}) => {
+            const wordToSpell = fizzbuzz(number);
 
-            expect(word).toBe(expectedWord)
+            expect(wordToSpell).toBe(spelledAsExpected)
     });
 });
